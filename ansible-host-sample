@@ -1,0 +1,11 @@
+[ios]
+CAT-1 ansible_host=172.16.1.11
+CAT-vPC ansible_host=172.16.1.23
+
+[nxos]
+NX-1 ansible_host=172.16.1.21
+NX-2 ansible_host=172.16.1.22
+
+[all:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco
