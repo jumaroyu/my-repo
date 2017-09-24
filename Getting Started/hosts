@@ -1,0 +1,11 @@
+[ios]
+cat-1.home.rod
+cat-vpc.home.rod
+
+[nxos]
+nx-1.home.rod
+nx-2.home.rod
+
+[all:vars]
+ansible_user=cisco
+ansible_ssh_pass=cisco

@@ -1,0 +1,11 @@
+After having tried both VIRL and EVE-NG settled on the latter to build a simple typical DC topology migration scenario including the following:
+
+CAT-1	Legacy core switch with existing configuration (L2 port-channel trunk to NX-1; L3 uplinks to NX-2)
+NX-1	N9Kv new core switch primary
+NX-2	N9Kv new core switch secondary
+CAT-vPC	Switch for legacy devices that cannot be linked directly to the new N9Kv core switches
+HOST-1	Legacy server connected to trunk port to CAT-1 to keep all SVIs up
+HOST-2	Legacy server unable link to new core switches linked to a trunk port on CAT-vPC instead
+HOST-vPC	Port-channel bundling capable server 
+
+OOB using home network and LDNS resolution
